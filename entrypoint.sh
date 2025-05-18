@@ -1,5 +1,7 @@
 #!/bin/sh -l
-ls /github/workspace
+echo `ls /`
+echo `ls /github`
+echo `ls /github/workspace`
 make -C /github/workspace/tests COCOTB_RESULTS_FILE=dut_results.xml
 echo "Hello $1"
 time=$(date)
